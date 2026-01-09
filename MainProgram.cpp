@@ -211,10 +211,9 @@ int bSearchTreeType<T>::nodeCount(nodeType<T>* p) const {
     // If p is null => 0
     if (p == nullptr) return 0;
     // else => 1 + nodeCount(left) + nodeCount(right)
-    else{
-        1 + nodeCount(p -> llink) + nodeCount(p -> rlink);
-    }
-    return 0;
+  
+        return 1 + nodeCount(p -> llink) + nodeCount(p -> rlink);
+   
 }
 
 /************************************************************
@@ -237,10 +236,9 @@ int bSearchTreeType<T>::leavesCount(nodeType<T>* p) const {
         return 1;
     // else => leavesCount(left) + leavesCount(right)
     }
-    else{
-        return leavesCount(p->llink) + leavesCount(p->rlink);
-    }
-    return 0;
+   
+     return leavesCount(p->llink) + leavesCount(p->rlink);
+ 
 }
 
 /************************************************************
@@ -278,4 +276,5 @@ int main() {
 
     return 0;
 }
+
 
