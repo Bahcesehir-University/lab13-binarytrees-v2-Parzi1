@@ -202,7 +202,7 @@ int bSearchTreeType<T>::height(nodeType<T>* p) const {
 template <class T>
 int bSearchTreeType<T>::treeNodeCount() const {
     // TODO: return nodeCount(root)
-    return 0;
+    return nodeCount(root);
 }
 
 template <class T>
@@ -224,7 +224,7 @@ int bSearchTreeType<T>::nodeCount(nodeType<T>* p) const {
 template <class T>
 int bSearchTreeType<T>::treeLeavesCount() const {
     // TODO: return leavesCount(root)
-    return 0;
+    return leavesCount(root);
 }
 
 template <class T>
@@ -278,3 +278,4 @@ int main() {
 
     return 0;
 }
+
